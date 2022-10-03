@@ -122,9 +122,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav-list-item{
     position: relative;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .link.current {
@@ -295,13 +292,10 @@ h1, h2, h3, h4, h5, h6, p {
     bottom: 0;
 
     opacity: 0;
-} 
-
-.servise-item {
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} 
 
 .servise-item:hover .servise-description,
 .servise-item:focus .servise-description {
@@ -391,8 +385,8 @@ h1, h2, h3, h4, h5, h6, p {
     fill: var(--fill-icon);
 
     transition-property: background-color, fill, stroke;
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-item-link:hover,
@@ -435,8 +429,8 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 4px;
 
     transition-property: border, fill;
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client {
@@ -535,7 +529,7 @@ h1, h2, h3, h4, h5, h6, p {
 .nav-list-item-link {
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-item-link:hover,
@@ -568,7 +562,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms, 250ms, 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:active,
@@ -681,7 +675,6 @@ h1, h2, h3, h4, h5, h6, p {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    overflow: visible;
     visibility: hidden;
 }
 
