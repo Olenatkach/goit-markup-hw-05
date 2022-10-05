@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p {
 .nav-list-item .link.current:after {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 44px;
     left: 0px;
 
     display: block;
@@ -285,22 +285,16 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--main-text-title-color);
     background: rgba(47, 48, 58, 0.8);
     width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     position: absolute;
     bottom: 0;
 
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} 
-
-.servise-item:hover .servise-description,
-.servise-item:focus .servise-description {
     opacity: 1;
-}
+} 
 
 .servise-list,
 .servise-item,
